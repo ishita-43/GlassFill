@@ -1,0 +1,80 @@
+*{
+   height: auto;
+   width: auto;
+   font-family: cursive;
+   background-color: rgb(157, 240, 157);
+}
+
+h2{
+    text-align: center;
+    margin-left: 5%;
+    color: rgb(18, 73, 104);
+    font-family: cursive;
+    font-weight: 5px;
+}
+
+.wave{
+    width: 200px;
+    height: 300px;
+    margin-left: 44%;
+    margin-top: 150px;
+    background-color: #80c5de;
+    border-radius: 0 0 50px 50px;
+    box-shadow: inset 0 0 50px #1ea9dc;
+    position: relative;
+    overflow: hidden;
+}
+
+ .wave::before{
+    position: absolute;
+    content: '';
+    width: 200%;
+    height: 200%;
+    background-color: #ececec;
+    top: -150%;
+    left: -50%;
+    border-radius: 40%;
+    animation: wave 12s infinite linear;
+}
+
+.wave::after{
+    position: absolute;
+    content: '';
+    width: 204%;
+    height: 204%;
+    background-color: #ececec80;
+    top: -150%;
+    left: -52%;
+    border-radius: 40%;
+    animation: wave 12s infinite linear;
+    animation-delay: 0.5 s;
+}
+
+@keyframes wave {
+   0%{ transform: rotate(0deg);
+   }
+   100%{transform: rotate(360deg);}
+} 
+
+.pipe{
+    height: 360px;
+    width: 20px;
+    border-radius: 100px;
+    border-width:10px;
+    background-color: #fcf19b;
+    border-radius: 0 0 2px 2px;
+    box-shadow: inset 0 0 50px #e9fbce;
+    margin-left: 50%;
+    margin-top: -410px;
+    transform: skewX(20deg);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn{
+    margin-top: 20px;
+    padding:5px;
+    background-color: rgb(84, 62, 226);
+    color: rgb(177, 247, 64);
+    margin-left: 48%;
+}
